@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    margin: 5px;
+}
+
+h2, h3 {
+    text-align: center; 
+}
+
+header {
+    flex-grow: 1;
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+    user-select: none; /* блокировка выделения текста*/
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.picture img {
+    width: 100%; /* картинки имеют ширину блоков */
+    pointer-events: none; /* блокировка выделения картинок*/
+    user-select: none;
+}
+
+nav a {
+    text-decoration: none;      
+    color: #cecccc;
+    display: inline-block;   
+    padding: 2px 10px;
+    background-color: #000000;    
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    transition: all 200ms;
+}
+
+nav a:focus-visible, button:focus-visible {
+    border-color: white;
+    background-color: white;
+    color: #333;
+}
+nav a:hover {
+    border-color: black;
+    background-color: white;
+    color: #333;
+}
+
+
+p {
+    margin: 20px 20px 20px 20px;
+}
+
+span {
+    width: 70%;
+}
+
+.picture {
+    color: #cecccc;
+    display: flex;   
+    border-radius: 10px;
+    border: 8px solid #b9b8b8;
+    margin: 0 auto;
+    margin: 20px auto
+}
+.picture:hover {
+    border-color: #787878;
+}
+.picture:active {
+    border-style: ridge;
+    border-color: #4b4b4b;
+}
+
+button {
+    text-decoration: none;      
+    color: #cecccc;
+    display: inline-flex;  
+    padding: 2px 10px;
+    background-color: #000000;    
+    border-radius: 10px;
+    margin: 5px 5px 20px 5px;
+    border: 2px solid #ddd;
+    transition: all 200ms;
+    user-select: none; /* блокировка выделения текста*/
+}
+button:hover {
+    border-color: black;
+    background-color: white;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* угадайте откуда)) */
+
+.socicon {
+    user-select: none; /* блокировка выделения текста*/
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-flex; /* случайно нашел. Работают флексовые свойства и работает как inline */
+    justify-content: space-around;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #333;
+}
+.iconup:hover { 
+    color: white;
+    background-color: gray;
+    transition: 0.3s;
+}
+.vk:hover {
+    background-color: #0077ff;  
+}
+.yt:hover {
+    background-color: #c30000;
+}
+.tg:hover {
+    background-color: #0088cc;
+}
+
+@media (max-width: 1600px) {
+    body {
+        font-size: larger
+    }
+}
+@media (max-width: 900px) {
+    body {
+        font-size: medium
+    }
+}
+@media (max-width: 400px) {
+    nav {
+        font-size: 80%;
+        margin: 5px;
+    }
+    .socicon {
+        width: 20%;
+        height: 20%;
+    }
+    p {
+        font-size: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    }
+
+@media (max-width: 375px) {
+    body {
+        font-size: small
+    }
+    .socicon {
+        width: 15%;
+        height: 15%;
+    }
+
+}

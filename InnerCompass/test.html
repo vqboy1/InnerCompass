@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerCompass Test</title>
+    <script src="js/test.js" defer></script>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+
+<body>
+    <header>
+        <h2>Тест на определение темперамента</h2>
+        <p>Из четырех утверждений вам необходимо выбрать одно, наиболее подходящее для вас.</p>
+        <button id="button1" onClick="window.location.reload();">Сбросить выбор</button>
+        <!--Кнопка перезагрузки страницы-->
+    </header>
+    <hr>
+    <main>
+        <form name="quiz" id="quiz">
+            <div> <!--radio - выбор варианта со встроенным toggle если кнопка нажата-->
+                <p>№1</p>
+                <p><input type="radio" name="question1" value="a">A. суетливы и неусидчивы</p>
+                <p><input type="radio" name="question1" value="b">B. жизнерадостны и веселы</p>
+                <p><input type="radio" name="question1" value="c">C. хладнокровны и спокойны</p>
+                <p><input type="radio" name="question1" value="d">D. застенчивы и стеснительны</p>
+            </div>
+
+            <div>
+                <p>№2</p>
+                <p><input type="radio" name="question2" value="a">A. вспыльчивы и невыдержанны</p>
+                <p><input type="radio" name="question2" value="b">B. деловиты и энергичны</p>
+                <p><input type="radio" name="question2" value="c">C. обстоятельны и последовательны</p>
+                <p><input type="radio" name="question2" value="d">D. в новой обстановке теряетесь</p>
+            </div>
+
+            <div>
+                <p>№3</p>
+                <p><input type="radio" name="question3" value="a">A. прямолинейны и резки по отношению к другим людям
+                </p>
+                <p><input type="radio" name="question3" value="b">B. склонны себя переоценивать</p>
+                <p><input type="radio" name="question3" value="c">C. умеете ждать</p>
+                <p><input type="radio" name="question3" value="d">D. сомневаетесь в свои силах</p>
+            </div>
+
+            <div>
+                <p>№4</p>
+                <p><input type="radio" name="question4" value="a">A. незлопамятны</p>
+                <p><input type="radio" name="question4" value="b">B. если что-то перестает интересовать, быстро
+                    остываете</p>
+                <p><input type="radio" name="question4" value="c">C. строго придерживаетесь системы в работе и
+                    распорядка дня</p>
+                <p><input type="radio" name="question4" value="d">D. приспосабливаетесь невольно к характеру собеседника
+                </p>
+            </div>
+
+            <div>
+                <p>№5</p>
+                <p><input type="radio" name="question5" value="a">A. вы обладатель порывистых, резких движений</p>
+                <p><input type="radio" name="question5" value="b">B. быстро засыпаете</p>
+                <p><input type="radio" name="question5" value="c">C. вам тяжело приспособиться к новой обстановке</p>
+                <p><input type="radio" name="question5" value="d">D. покорны</p>
+            </div>
+
+            <div>
+                <p>№6</p>
+                <p><input type="radio" name="question6" value="a">A. у вас выразительная мимика</p>
+                <p><input type="radio" name="question6" value="b">B. быстрая, громкая речь с живыми жестами</p>
+                <p><input type="radio" name="question6" value="c">C. медленно включаетесь в работу</p>
+                <p><input type="radio" name="question6" value="d">D. очень обидчивы</p>
+            </div>
+
+            <div>
+                <p>№7</p>
+                <p><input type="radio" name="question7" value="a">A. к недостаткам терпеливы</p>
+                <p><input type="radio" name="question7" value="b">B. работоспособны, выносливы</p>
+                <p><input type="radio" name="question7" value="c">C. в своих интересы постоянны</p>
+                <p><input type="radio" name="question7" value="d">D. очень впечатлительны</p>
+            </div>
+
+            <div>
+                <p>№8</p>
+                <p><input type="radio" name="question8" value="a">A. вам присуща несобранность</p>
+                <p><input type="radio" name="question8" value="b">B. настойчивы в достижении цели</p>
+                <p><input type="radio" name="question8" value="c">C. вялы, малоподвижны</p>
+                <p><input type="radio" name="question8" value="d">D. ищите сочувствия других</p>
+            </div>
+
+            <div>
+                <p>№9</p>
+                <p><input type="radio" name="question9" value="a">A. быстро решаете и действуйте</p>
+                <p><input type="radio" name="question9" value="b">B. в сложной ситуации сохраняете самообладание</p>
+                <p><input type="radio" name="question9" value="c">C. ровные отношения со всеми</p>
+                <p><input type="radio" name="question9" value="d">D. необщительны</p>
+            </div>
+
+            <div>
+                <p>№10</p>
+                <p><input type="radio" name="question10" value="a">A. стремитесь к новому</p>
+                <p><input type="radio" name="question10" value="b">B. у вас всегда бодрое настроение</p>
+                <p><input type="radio" name="question10" value="c">C. любите аккуратность</p>
+                <p><input type="radio" name="question10" value="d">D. робки, малоактивны</p>
+            </div>
+
+            <div>
+                <p>№11</p>
+                <p><input type="radio" name="question11" value="a">A. бываете агрессивным, задирой</p>
+                <p><input type="radio" name="question11" value="b">B. отзывчивы и общительны</p>
+                <p><input type="radio" name="question11" value="c">C. незлобивы</p>
+                <p><input type="radio" name="question11" value="d">D. мнительны, подозритлеьны</p>
+            </div>
+
+            <div>
+                <p>№12</p>
+                <p><input type="radio" name="question12" value="a">A. резкие смены настроения</p>
+                <p><input type="radio" name="question12" value="b">B. склонны отвлекаться</p>
+                <p><input type="radio" name="question12" value="c">C. обладаете выдержкой</p>
+                <p><input type="radio" name="question12" value="d">D. слишком восприимчивы к порицанию и одобрению</p>
+            </div>
+
+            <div>
+                <p>№13</p>
+                <p><input type="radio" name="question13" value="a">A. в споре находчивы</p>
+                <p><input type="radio" name="question13" value="b">B. неудачи переживаете легко</p>
+                <p><input type="radio" name="question13" value="c">C. терпеливы и сдержаны</p>
+                <p><input type="radio" name="question13" value="d">D. имеете склонность уходить в себя</p>
+            </div>
+
+            <div>
+                <p>№14</p>
+                <p><input type="radio" name="question14" value="a">A. склонность к риску</p>
+                <p><input type="radio" name="question14" value="b">B. к разным обстоятельствам приспосабливаетесь легко
+                </p>
+                <p><input type="radio" name="question14" value="c">C. начатое дело доводите до конца</p>
+                <p><input type="radio" name="question14" value="d">D. у вас быстрая утомляемость</p>
+            </div>
+
+            <div>
+                <p>№15</p>
+                <p><input type="radio" name="question15" value="a">A. имеете склонность к горячности</p>
+                <p><input type="radio" name="question15" value="b">B. тяготитесь однообразной кропотливой работой</p>
+                <p><input type="radio" name="question15" value="c">C. мало восприимчивы к порицанию и одобрению</p>
+                <p><input type="radio" name="question15" value="d">D. у вас высокие требования к окружающим и себе</p>
+            </div>
+        </form>
+    </main>
+    <p id="result"></p>
+    <input type="button" value="Я готов!" id="button2" onclick="check()"> <!--при нажатии выполняется функция js-->
+</body>
+
+</html>
